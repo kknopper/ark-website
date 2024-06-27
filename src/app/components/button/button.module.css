@@ -1,0 +1,15 @@
+.button {
+	border-radius: 5px;
+	color: var(--ark-blue);
+	background-color: white;
+	border: none;
+	padding: 10px;
+	border: 3px solid white;
+	margin-top: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	max-width: 250px;
+	width: 100%;
+	box-shadow: var(--shadow-elevation-medium);
+	font-weight: 900;
+}

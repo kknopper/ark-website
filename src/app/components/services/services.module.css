@@ -1,0 +1,60 @@
+.section {
+	background-color: white;
+	container-type: inline-size;
+}
+
+.headline {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 15px;
+	color: var(--ark-blue);
+	text-transform: uppercase;
+}
+
+.serviceGrid {
+	--column-num: 3;
+	--row-num: 2;
+	--fit-content: 480px;
+	--gap: 35px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(var(--column-num), fit-content(var(--fit-content)));
+	grid-template-rows: repeat(var(--row-num), 1fr);
+	grid-gap: var(--gap);
+	justify-content: center;
+
+	@container (max-width: 1700px) {
+		--column-num: 2;
+		--row-num: 3;
+	}
+
+	@container (max-width: 735px) {
+		--column-num: 1;
+		--row-num: 6;
+		--fit-content: 1fr;
+		--gap: 15px;
+	}
+}
+
+.serviceBlock {
+	background-color: var(--ark-blue);
+	width: 100%;
+	max-width: 480px;
+	height: 360px;
+	border-radius: 15px;
+	padding: 35px;
+	box-shadow: var(--shadow-elevation-small);
+
+	@container (max-width: 735px) {
+		max-width: none;
+	}
+
+	.icon {
+		max-width: 50px;
+		margin-bottom: 15px;
+	}
+
+	.title, .blurb {
+		color: white
+	}
+}

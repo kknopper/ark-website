@@ -1,0 +1,13 @@
+.section {
+	padding: 70px 5%;
+}
+
+.content {
+	max-width: 980px;
+	margin: 0 auto;
+	container-type: normal;
+}
+
+.section:global(.fullWidth) .content {
+	max-width: none;
+}

@@ -1,0 +1,54 @@
+.hero {
+	background-color: var(--ark-blue);
+	position: relative;
+	container-type: inline-size;
+}
+
+.headline {
+	font-weight: 900;
+	font-size: 5em;
+
+	@container (max-width: 1050px) {
+		font-size: 3.75em;
+	}
+
+	@container (max-width: 750px) {
+		font-size: 4.5em;
+	}
+
+	@container (max-width: 650px) {
+		font-size: 2.4em;
+	}
+}
+
+.intro {
+	max-width: 60%;
+	font-size: 1em;
+	font-weight: 500;
+
+	@container (max-width: 850px) {
+		max-width: 435px;
+	}
+
+	@container (max-width: 600px) {
+		max-width: 100%;
+	}
+}
+
+.intro + .intro {
+	margin-top: 20px;
+}
+
+.ark {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	@container (max-width: 750px) {
+		margin-bottom: -70px;
+		margin-left: auto;
+		margin-right: -6%;
+		margin-top: 30px;
+		position: static;
+	}
+}
