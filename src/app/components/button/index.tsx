@@ -1,8 +1,9 @@
+import { Url } from "next/dist/shared/lib/router/router";
 import styles from "./button.module.css"
 import Link from "next/link";
 
 export default function Button(
-	{ children, link = false }: Readonly<{ children: React.ReactNode; link: boolean | URL}>
+	{ children, link}: Readonly<{ children: React.ReactNode; link: Url}>
 	)
 {
 
