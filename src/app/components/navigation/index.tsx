@@ -14,12 +14,12 @@ export default function Navigation() {
 					<li className={styles.link}>
 						<Link href="#services" scroll={true}>Services</Link>
 					</li>
-					<li className={styles.link}>
+					{/* <li className={styles.link}>
 						<Link href="#about" scroll={true}>About</Link>
 					</li>
 					<li className={styles.link}>
 						<Link href="#contact" scroll={true}>Contact</Link>
-					</li>
+					</li> */}
 				</ul>
 			</nav>
 		</header>
