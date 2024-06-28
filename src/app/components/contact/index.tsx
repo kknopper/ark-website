@@ -10,11 +10,6 @@ export default function Contact() {
 			<Waves />
 			<Section customClass={`section-contact ${styles.contact}`} id="contact">
 				<h2>Contact</h2>
-				<Image src="/ark-logo-wordmark.svg" alt='ark' width={148} height={150} className={styles.ark}
-				style={{
-					height: 'auto',
-				}}
-			/>
 			</Section>
 		</Fragment>
 	);

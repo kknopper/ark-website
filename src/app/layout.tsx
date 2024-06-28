@@ -4,6 +4,7 @@ import "./reset.css";
 import "./globals.css";
 import Navigation from "./components/navigation";
 import Head from 'next/head'
+import Footer from './components/footer'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <main className="main">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

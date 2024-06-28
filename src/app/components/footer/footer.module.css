@@ -1,0 +1,14 @@
+.footer {
+	background-color: var(--ark-blue);
+	padding: 25px;
+}
+
+.ark {
+	margin: 0 auto;
+}
+
+.copyright {
+	margin-top: 15px;
+	text-align: center;
+	font-weight: 500;
+}
