@@ -3,11 +3,11 @@ import styles from "./button.module.css"
 import Link from "next/link";
 
 export default function Button(
-	{ children, link}: Readonly<{ children: React.ReactNode; link: Url}>
+	{ children, link=":"}: Readonly<{ children: React.ReactNode; link: Url}>
 	)
 {
 
-	if (link) {
+	if (link !== ":") {
 		return (
 			<Link className={styles.button} href={link} >
 				{children}
