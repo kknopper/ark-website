@@ -1,10 +1,7 @@
 .button {
 	border-radius: 5px;
-	color: var(--ark-blue);
-	background-color: white;
 	border: none;
 	padding: 10px;
-	border: 3px solid white;
 	margin-top: 50px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -12,4 +9,16 @@
 	width: 100%;
 	box-shadow: var(--shadow-elevation-medium);
 	font-weight: 900;
+}
+
+.white {
+	color: var(--ark-blue);
+	background-color: white;
+	border: 3px solid white;
+}
+
+.blue {
+	color: white;
+	background-color: var(--ark-blue);
+	border: 3px solid var(--ark-blue);
 }

@@ -8,7 +8,7 @@ export default function Home() {
     <Fragment>
       <Hero />
       <Services />
-      {/* <Contact /> */}
+      <Contact />
     </Fragment>
   );
 }
