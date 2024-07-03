@@ -1,13 +1,18 @@
 import { Url } from "next/dist/shared/lib/router/router";
 import styles from "./button.module.css"
 import Link from "next/link";
-import { ButtonHTMLAttributes } from "react";
+import React, { ButtonHTMLAttributes } from "react";
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+	// Additional custom props can be added here
+	children: React.ReactNode;
+	link?: Url;
+	theme?: string;
+}
 
 
-export default function Button(
-	{ children, action = "button", link = ":", theme="white" }: Readonly<{ children: React.ReactNode; action: ButtonHTMLAttributes; link: Url, theme: string}>
-	)
-{
+const Button: React.FC<ButtonProps> =
+	({ children, link = ":", theme="white", ...rest }) => {
 
 	if (link !== ":") {
 		return (
@@ -17,9 +22,11 @@ export default function Button(
 		);
 	} else {
 		return (
-			<button type={action} className={`${styles.button} ${styles[theme]}`} >
+			<button {...rest} className={`${styles.button} ${styles[theme]} ${rest.className}`}>
 				{children}
 			</button>
 		)
 	}
-}
+	}
+
+export default Button;

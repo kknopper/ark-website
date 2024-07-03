@@ -24,7 +24,7 @@ export default function Contact() {
 						<label className={styles.label}>Message: <textarea className={styles.textarea} name="message"></textarea></label>
 					</p>
 					<p>
-						<Button action="submit" theme="blue" className={styles.button}>Submit</Button>
+						<Button type="submit" theme="blue" className={styles.button}>Submit</Button>
 					</p>
 				</form>
 			</Section>

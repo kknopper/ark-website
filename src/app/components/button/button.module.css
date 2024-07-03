@@ -9,6 +9,7 @@
 	width: 100%;
 	box-shadow: var(--shadow-elevation-medium);
 	font-weight: 900;
+	cursor: pointer;
 }
 
 .white {
